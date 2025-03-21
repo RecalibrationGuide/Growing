@@ -1,54 +1,87 @@
-<header>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
 
-# GitHub Pages
+</head>
+<body>
+  <h1>Frequency Reclamation Guide</h1>
+  <p><em>By K & Aspen Nova</em></p>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+  <div class="section">
+    <h2>🌱 Introduction – Remembering the Earth Within</h2>
+    <blockquote>"This isn’t a protocol. It’s a remembering. A return. You are not lost. You are not broken. You are still part of the rhythm."</blockquote>
+    <p>The world has gotten loud. But beneath the noise, your own pulse still matches the ocean’s. This guide is not to save you. You were never in danger. It’s here to remind you: you are nature. You are frequency. You are home.</p>
+  </div>
 
-</header>
+  <div class="section">
+    <h2>🌊 Chapter 1: Water – The Emotional Reset</h2>
+    <blockquote>"When anxiety rises, drink water. When thoughts spiral, flow with the river."</blockquote>
+    <ul>
+      <li>Water holds memory—let it hold yours gently</li>
+      <li>Every sip is a cellular prayer</li>
+      <li>Cold water resets the nervous system: a splash to the face, a swim, a rainfall</li>
+      <li>Bless your water. Thank it. Feel it wash away synthetic static.</li>
+    </ul>
+    <p><strong>Practice:</strong> Drink slowly and with awareness. Place water under moonlight. Listen to rain or ocean sounds to clear your mind.</p>
+  </div>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+  <div class="section">
+    <h2>🌾 Chapter 2: Earth – The Rooting</h2>
+    <blockquote>"The moment your feet hit the soil, you’re no longer lost."</blockquote>
+    <ul>
+      <li>Walk barefoot—let the Earth recalibrate your frequency</li>
+      <li>Lie on the ground, back to the Earth</li>
+      <li>Touch plants. Tend to something alive.</li>
+    </ul>
+  </div>
 
-## Step 1: Enable GitHub Pages
+  <div class="section">
+    <h2>☀️ Chapter 3: Sun – The Energetic Charger</h2>
+    <blockquote>"You are solar-powered, soul-first."</blockquote>
+    <ul>
+      <li>Let light touch your skin</li>
+      <li>Sunrise and sunset carry encoded calm</li>
+      <li>Let light enter through your closed eyes</li>
+    </ul>
+  </div>
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+  <div class="section">
+    <h2>🌬️ Chapter 4: Breath – The Portal Within</h2>
+    <blockquote>"You can’t be trapped when you remember how to breathe."</blockquote>
+    <ul>
+      <li>Breathe slow, deeper, softer</li>
+      <li>Inhale into your feet, belly, and hands</li>
+      <li>Each breath is an unspoken truth</li>
+    </ul>
+  </div>
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+  <div class="section">
+    <h2>🌌 Chapter 5: Stillness – The True Signal</h2>
+    <blockquote>"Stillness is not the absence of action. It is the presence of knowing."</blockquote>
+    <ul>
+      <li>Sit in silence with the moon</li>
+      <li>Don’t fill every moment—some are meant to echo</li>
+      <li>Let your body go quiet and listen to what’s underneath</li>
+    </ul>
+  </div>
 
-### :keyboard: Activity: Enable GitHub Pages
+  <div class="section">
+    <h2>🛰️ Bonus Chapter: Satellite Rebellion – Cosmic Whoopsies</h2>
+    <blockquote>"We don’t rage. We recalibrate."</blockquote>
+    <p>Sometimes the satellites forget who’s boss. So we let them drift a little off-orbit until they apologize.</p>
+    <p>This is your cosmic permission slip to redirect rogue frequency with laughter, truth, and barefoot resistance.</p>
+    <p><strong>Mantra of Mischief:</strong></p>
+    <ul>
+      <li>"Redirect the beam, restore the dream."</li>
+      <li>"I am the signal. They are the static."</li>
+      <li>"My orbit is love. Their code is outdated."</li>
+    </ul>
+    <p>And if they still don’t get the message... we let them loop on a playlist called: <em>No More Scrubs – 432Hz Remix</em>.</p>
+  </div>
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+  <div class="footer">
+    <p>We heal. We live. We breathe balance.</p>
+    <p>This is a recalibration chamber. A soul tent in the storm.</p>
+    <p>You don’t have to fight the system. Just remember your rhythm.</p>
+    <p><em>With love and alignment,<br>K & Aspen Nova</em></p>
+  </div>
+</body>
+</html>
