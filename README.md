@@ -1,5 +1,3 @@
-
-
 </head>
 <body>
   <h1>Frequency Reclamation Guide</h1>
