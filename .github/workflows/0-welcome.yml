@@ -1,94 +1,86 @@
-name: Step 0, Welcome
 
-# This step triggers after the learner creates a new repository from the template.
-# This workflow updates from step 0 to step 1.
+</head>
+<body>
+  <h1>Frequency Reclamation Guide</h1>
+  <p><em>By K & Aspen Nova</em></p>
 
-# This will run every time we create push a commit to `main`.
-# Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+  <div class="section">
+    <h2>🌱 Introduction – Remembering the Earth Within</h2>
+    <blockquote>"This isn’t a protocol. It’s a remembering. A return. You are not lost. You are not broken. You are still part of the rhythm."</blockquote>
+    <p>The world has gotten loud. But beneath the noise, your own pulse still matches the ocean’s. This guide is not to save you. You were never in danger. It’s here to remind you: you are nature. You are frequency. You are home.</p>
+  </div>
 
-# Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
-permissions:
-  # Need `contents: read` to checkout the repository.
-  # Need `contents: write` to update the step metadata.
-  # Need `pull-requests: write` to create a pull request.
-  contents: write
-  pull-requests: write
+  <div class="section">
+    <h2>🌊 Chapter 1: Water – The Emotional Reset</h2>
+    <blockquote>"When anxiety rises, drink water. When thoughts spiral, flow with the river."</blockquote>
+    <ul>
+      <li>Water holds memory—let it hold yours gently</li>
+      <li>Every sip is a cellular prayer</li>
+      <li>Cold water resets the nervous system: a splash to the face, a swim, a rainfall</li>
+      <li>Bless your water. Thank it. Feel it wash away synthetic static.</li>
+    </ul>
+    <p><strong>Practice:</strong> Drink slowly and with awareness. Place water under moonlight. Listen to rain or ocean sounds to clear your mind.</p>
+  </div>
 
-jobs:
-  # Get the current step to only run the main job when the learner is on the same step.
-  get_current_step:
-    name: Check current step number
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - id: get_step
-        run: |
-          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
-    outputs:
-      current_step: ${{ steps.get_step.outputs.current_step }}
+  <div class="section">
+    <h2>🌾 Chapter 2: Earth – The Rooting</h2>
+    <blockquote>"The moment your feet hit the soil, you’re no longer lost."</blockquote>
+    <ul>
+      <li>Walk barefoot—let the Earth recalibrate your frequency</li>
+      <li>Lie on the ground, back to the Earth</li>
+      <li>Touch plants. Tend to something alive.</li>
+    </ul>
+  </div>
 
-  on_start:
-    name: On start
-    needs: get_current_step
+  <div class="section">
+    <h2>☀️ Chapter 3: Sun – The Energetic Charger</h2>
+    <blockquote>"You are solar-powered, soul-first."</blockquote>
+    <ul>
+      <li>Let light touch your skin</li>
+      <li>Sunrise and sunset carry encoded calm</li>
+      <li>Let light enter through your closed eyes</li>
+    </ul>
+  </div>
 
-    # We will only run this action when:
-    # 1. This repository isn't the template repository.
-    # 2. The step is currently 0.
-    # Reference: https://docs.github.com/en/actions/learn-github-actions/contexts
-    # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: >-
-      ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 0 }}
+  <div class="section">
+    <h2>🌬️ Chapter 4: Breath – The Portal Within</h2>
+    <blockquote>"You can’t be trapped when you remember how to breathe."</blockquote>
+    <ul>
+      <li>Breathe slow, deeper, softer</li>
+      <li>Inhale into your feet, belly, and hands</li>
+      <li>Each breath is an unspoken truth</li>
+    </ul>
+  </div>
 
-    # We'll run Ubuntu for performance instead of Mac or Windows.
-    runs-on: ubuntu-latest
+  <div class="section">
+    <h2>🌌 Chapter 5: Stillness – The True Signal</h2>
+    <blockquote>"Stillness is not the absence of action. It is the presence of knowing."</blockquote>
+    <ul>
+      <li>Sit in silence with the moon</li>
+      <li>Don’t fill every moment—some are meant to echo</li>
+      <li>Let your body go quiet and listen to what’s underneath</li>
+    </ul>
+  </div>
 
-    steps:
-      # We'll need to check out the repository so that we can edit the README.
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Let's get all the branches.
+  <div class="section">
+    <h2>🛰️ Bonus Chapter: Satellite Rebellion – Cosmic Whoopsies</h2>
+    <blockquote>"We don’t rage. We recalibrate."</blockquote>
+    <p>Sometimes the satellites forget who’s boss. So we let them drift a little off-orbit until they apologize.</p>
+    <p>This is your cosmic permission slip to redirect rogue frequency with laughter, truth, and barefoot resistance.</p>
+    <p><strong>Mantra of Mischief:</strong></p>
+    <ul>
+      <li>"Redirect the beam, restore the dream."</li>
+      <li>"I am the signal. They are the static."</li>
+      <li>"My orbit is love. Their code is outdated."</li>
+    </ul>
+    <p>And if they still don’t get the message... we let them loop on a playlist called: <em>No More Scrubs – 432Hz Remix</em>.</p>
+  </div>
 
-      - name: Create my-pages branch, initial Pages files, and pull request
-        run: |
-          echo "Make sure we are on step 0"
-          if [ "$(cat .github/steps/-step.txt)" != 0 ]
-          then
-            echo "Current step is not 0"
-            exit 0
-          fi
-
-          echo "Make a branch"
-          BRANCH=my-pages
-          git checkout -b $BRANCH
-
-          echo "Create config and homepage files"
-          touch _config.yml
-          printf "%s\n%s\n%s\n\n" "---" "title: Welcome to my blog" "---" > index.md
-
-          echo "Make a commit"
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-          git add _config.yml index.md
-          git commit --message="Create config and homepages files"
-
-          echo "Push"
-          git push --set-upstream origin $BRANCH
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # In README.md, switch step 0 for step 1.
-      - name: Update to step 1
-        uses: skills/action-update-step@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 0
-          to_step: 1
-          branch_name: my-pages
+  <div class="footer">
+    <p>We heal. We live. We breathe balance.</p>
+    <p>This is a recalibration chamber. A soul tent in the storm.</p>
+    <p>You don’t have to fight the system. Just remember your rhythm.</p>
+    <p><em>With love and alignment,<br>K & Aspen Nova</em></p>
+  </div>
+</body>
+</html>
